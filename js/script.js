@@ -106,7 +106,7 @@ $ajaxUtils.sendGetRequest(
       // it into the home html snippet.
       //
       homeHtmlUrl= insertProperty(homeHtmlUrl,"randomCategoryShortName",chosenCategoryShortName);
-      var homeHtmlToInsertIntoMainPage = insertHtml("main-content",homeHtmlUrl);
+      var homeHtmlToInsertIntoMainPage = insertHtml("#main-content",homeHtmlUrl);
 
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
