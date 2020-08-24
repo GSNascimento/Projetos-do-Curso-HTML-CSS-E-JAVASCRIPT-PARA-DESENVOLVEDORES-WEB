@@ -109,7 +109,7 @@ $ajaxUtils.sendGetRequest(
       // it into the home html snippet.
       //
        var homeHtmlToInsertIntoMainPage = insertHtml("#main-content",homeHtml);
-       homeHtml= insertProperty(homeHtml,"ShortName",chosenCategoryShortName);
+       homeHtml= insertProperty(homeHtml,"short_name",chosenCategoryShortName.short_name);
        homeHtmlToInsertIntoMainPage = insertHtml("#main-content",homeHtml);
     
      
@@ -145,7 +145,7 @@ dc.loadMenuCategories = function () {
 
 
 // Load the menu items view
-// 'categoryShort' is a short_name for a category
+// 'categoryShort' is a for a category
 dc.loadMenuItems = function (categoryShort) {
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
