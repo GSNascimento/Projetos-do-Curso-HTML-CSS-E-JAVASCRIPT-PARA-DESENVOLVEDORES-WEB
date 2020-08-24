@@ -108,8 +108,8 @@ $ajaxUtils.sendGetRequest(
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
-      homeHtmlUrl= insertProperty(homeHtmlUrl,"randomCategoryShortName",chosenCategoryShortName);
-      var homeHtmlToInsertIntoMainPage = insertHtml("#main-content",homeHtmlUrl);
+      homeHtml= insertProperty(homeHtml,"randomCategoryShortName",chosenCategoryShortName);
+      var homeHtmlToInsertIntoMainPage = insertHtml("#main-content",homeHtml);
 
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
