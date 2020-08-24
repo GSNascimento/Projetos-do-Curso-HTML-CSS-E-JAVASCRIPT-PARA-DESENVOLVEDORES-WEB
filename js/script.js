@@ -109,7 +109,7 @@ $ajaxUtils.sendGetRequest(
       // it into the home html snippet.
       //
        var homeHtmlToInsertIntoMainPage = insertHtml("#main-content",homeHtml);
-       homeHtml= insertProperty(homeHtml,"short_name",chosenCategoryShortName);
+       homeHtml= insertProperty(homeHtml,"short_name",chosenCategoryShortName.short_name);
        homeHtmlToInsertIntoMainPage = insertHtml("#main-content",homeHtml);
     
      
