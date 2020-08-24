@@ -83,7 +83,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  , function (categories) {
+  buildAndShowHomeHTML,true);
+});
+// *** finish **
+ function  buildAndShowHomeHTML (categories) {
   // Load home snippet page
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
@@ -116,12 +119,7 @@ $ajaxUtils.sendGetRequest(
 
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
-}, // ***** <---- TODO: STEP 1: Substitute [...] ******
-  true); // Explicitly setting the flag to get JSON from server processed into an object literal
-});
-// *** finish **
-
-
+ }
 // Builds HTML for the home page based on categories array
 // returned from the server.
 
